@@ -8,7 +8,7 @@ use Auth;
 
 class AdminLoginController extends Controller
 {
-    public function __contruct()
+    public function __construct()
     {
       $this->middleware('guest:admin')->except('logout');
     }
